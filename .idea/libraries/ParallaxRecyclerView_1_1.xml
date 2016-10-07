@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ParallaxRecyclerView-1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.yayandroid/ParallaxRecyclerView/1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.yayandroid/ParallaxRecyclerView/1.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yayandroid/ParallaxRecyclerView/1.1/fc454dc27ce0d957636821e61c6a4cb957472e37/ParallaxRecyclerView-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
