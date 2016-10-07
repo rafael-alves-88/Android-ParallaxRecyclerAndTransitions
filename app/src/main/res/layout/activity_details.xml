@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rafael.alves.parallaxrecyclerandtransitionsample.view.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivSprite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/rlViewTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <include layout="@layout/black_transparent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlViewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="@android:color/black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlButtonsTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/btnTop1"
+            style="@style/Button"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/btn_star"/>
+
+        <ImageButton
+            android:id="@+id/btnTop3"
+            style="@style/Button"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/ic_delete"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlButtonsBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/btnBottom1"
+            style="@style/Button"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/arrow_up_float"/>
+
+        <ImageButton
+            android:id="@+id/btnBottom2"
+            style="@style/Button"
+            android:layout_toEndOf="@+id/btnBottom1"
+            android:src="@android:drawable/arrow_down_float"/>
+
+        <ImageButton
+            android:id="@+id/btnBottom3"
+            style="@style/Button"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/btn_radio"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
